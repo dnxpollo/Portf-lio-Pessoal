@@ -1,0 +1,131 @@
+<!DOCTYPE html> <!-- Define que o documento está em HTML5 -->
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Portfólio pessoal</title>
+    </head>
+    <body>
+        <header>
+            <div id="cabecalho">
+                <h1>Sérgio Henrique</h1>
+                <img
+                    src="fotoperfil.jpg"
+                    alt="um homem pardo com cabelos cacheados curtos, barba grande, usando um óculos com armação transparente."
+                    id="img-header"
+                >
+            </div>
+            <p>Uma página falando um pouco sobre mim.</p>
+            <nav id="menu-header">
+                <ul id="menu-lista">
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li>
+                        <button
+                            class="btn"
+                            onclick="mudarCor()"
+                            aria-label="Troca o tema do site."
+                        >
+                            Trocar tema
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="container" id="sobre-mim">
+                <h2>Sobre mim</h2>
+                <p>
+                    Sou alguém que gosta de aprender mais sobre o mundo, saber sobre as espécies
+                    desde a zona abissal até aqueles que nem imaginamos que existam. Quero poder
+                    fazer coisas boas para as pessoas que me fizeram bem em algum momento. Poder
+                    experimentar coisas e ter uma boa primeira sensação de novo. Gosto de cozinhar,
+                    ver televisão, sair para caminhar, observar a noite. Conseguir facilitar a vida
+                    das pessoas de alguma forma, devolver o tempo para viver sem deixar de fazer o
+                    que é preciso ser feito, é a meta.
+                </p>
+                <div class="carrossel-container"> <!-- Container que contém o carrossel de imagens -->
+                    <div class="carrossel-track"> <!-- Contém as imagens do carrossel -->
+                        <img src="html.jpg" alt="tela de computador com código HTML.">
+                        <img src="js.jpg" alt="Pessoa segurando um adesivo do Node JS.">
+                        <img src="python.jpg" alt="Uma pessoa com um livro da linguagem de programação Python, na capa do livro uma cobra python.">
+                    </div>
+                    <button class="carrossel-btn prev" aria-label="botão para imagem anterior.">‹</button>
+                    <button class="carrossel-btn next" aria-label="botão para próxima imagem.">›</button>
+                    <div class="carrossel-indicadores">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container" id="formacao">
+                <h2>Formação</h2>
+                <p>
+                    Estudante do curso de Engenharia de Software pelo Centro Universitário
+                    Internacional desde janeiro de 2025. Iniciei meus estudos na Universidade
+                    Federal de Goiás no curso de Ciências Biológicas, mas fui atrás de algo que era
+                    mais relacionado com o que eu queria poder fazer no meu cotidiano. Faço alguns
+                    cursos sobre tecnologias, sobre capacitação de pessoas com deficiência
+                    intelectual e/ou múltipla (é o trabalho que realizo desde 2022).
+                </p>
+                <p>
+                    Em relação a estudo de idiomas, deixo as que mais tenho contato. Mas estudo
+                    outros idiomas mas ainda sem a base.
+                </p>
+                <ol id="formacao-lista">
+                    <li>Inglês - Boa conversação, escrita e leitura.</li>
+                    <li>Francês - Boa leitura e boa escrita.</li>
+                    <li>Espanhol - Boa leitura e escrita.</li>
+                </ol>
+            </section>
+
+            <section class="container" id="portfolio">
+                <h2>Portfólio</h2>
+                <p>
+                    Sem esquecer de toda bagagem de conhecimento que tive no curso das ciências
+                    biológicas, que me ajudam e irão sempre me ajudar, mas irei focar no início de
+                    algo muito legal que estou construindo.
+                </p>
+                <a href="https://github.com/dnxpollo" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/sergiohenriqueferreiradeandrade/" target="_blank">LinkedIn</a>
+            </section>
+
+            <section class="container" id="contato">
+                <h2>Contato</h2>
+                <p>Vamos iniciar esse contato? Sei que teremos muito a falar.</p>
+                <form class="form-class">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+
+                    <label for="texto">Mensagem</label>
+                    <textarea
+                        id="texto"
+                        name="texto"
+                        rows="5"
+                        placeholder="Deixe sua mensagem..."
+                    ></textarea>
+
+                    <div class="btn-class">
+                        <input class="btn" type="submit" value="Enviar contato">
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            &copy;2025 Sérgio Henrique. Todos os direitos reservados.
+        </footer>
+
+        <script src="main.js"></script> <!-- Importa o arquivo JavaScript -->
+    </body>
+</html>
